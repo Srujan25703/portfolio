@@ -6,12 +6,16 @@ const Projects = () => {
       <div className="projects-container">
         <h2>Projects</h2>
         <div className="project-card">
-          <h3>Project 1</h3>
-          <p>Description of Project 1 goes here.</p>
+          <h3>Calculator</h3>
+          <p>Designed a Calculator using react js</p>
+          <a href="https://calculator-pi-nine-81.vercel.app/">Calculator</a>
         </div>
         <div className="project-card">
-          <h3>Project 2</h3>
-          <p>Description of Project 2 goes here.</p>
+          <h3>Age Calculator</h3>
+          <p>Designed a Calculator using react js</p>
+          <a href="https://age-calculator-five-mauve.vercel.app/">
+            Age Calculator
+          </a>
         </div>
         {/* Add more project cards as needed */}
       </div>

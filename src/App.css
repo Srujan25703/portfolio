@@ -1,0 +1,287 @@
+* {
+  color: white;
+}
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "DM Mono", monospace;
+  position: relative;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: left;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.navbar {
+  padding: 10px 0;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.header {
+  color: #edf5e1;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.highlight {
+  color: #000000;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+  font-size: 27px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Navbar.css */
+.navbar {
+  padding: 10px 0;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #05386b;
+  animation: fadeIn 1s ease-in-out;
+  cursor: pointer;
+}
+#contact {
+  color: #edf5e1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+/* Keyframe animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Add gap between cards */
+}
+
+.skill-card {
+  background-color: #000000; /* Skill card background color */
+  padding: 20px;
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  text-align: left; /* Align text to the left */
+}
+
+.skill-card h3 {
+  color: #ffffff; /* Skill title color */
+}
+
+.skill-card p {
+  color: #ffffff; /* Skill description color */
+}
+
+/* Projects.css styles */
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px; /* Add internal padding */
+  text-align: left;
+}
+
+.project-card {
+  background-color: #000000; /* Project card background color */
+  padding: 20px;
+  margin: 20px 0; /* Add margin to separate project cards */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.project-card h3 {
+  color: hsl(0, 0%, 100%); /* Heading color */
+}
+
+.project-card p {
+  color: #ffffff; /* Paragraph color */
+}
+
+.scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+  opacity: 1;
+}
+
+.scroll-to-top-button.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.scroll-to-top-button i {
+  font-size: 24px;
+}
+
+/* Header.css styles */
+.header {
+  color: #edf5e1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.float {
+  animation: floatAnimation 2s infinite ease-in-out;
+  font-size: 40px; /* Adjust the font size of the name */
+  position: relative;
+  z-index: 1;
+}
+
+.bracket {
+  font-size: 70px; /* Adjust the font size of '[' and ']' */
+  color: #00ffbb9d; /* Set the color to #16a085 */
+  margin: 0 100px; /* Add margin for spacing between brackets and the name */
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Add these styles to your app.css file */
+
+/* ... remaining styles ... */
